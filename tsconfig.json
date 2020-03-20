@@ -26,7 +26,31 @@
       "@ngrx-workshop-app/shipping-data-access": [
         "libs/shipping-data-access/src/index.ts"
       ],
-      "@ngrx-workshop-app/*": ["apps/ngrx-workshop-app/src/app/*"]
+      "@ngrx-workshop-app/*": ["apps/ngrx-workshop-app/src/app/*"],
+      "@ngrx-workshop-app/state/cart/actions": [
+        "libs/state/cart/actions/src/index.ts"
+      ],
+      "@ngrx-workshop-app/state/cart/state": [
+        "libs/state/cart/state/src/index.ts"
+      ],
+      "@ngrx-workshop-app/state/products/actions": [
+        "libs/state/products/actions/src/index.ts"
+      ],
+      "@ngrx-workshop-app/state/app/actions": [
+        "libs/state/app/actions/src/index.ts"
+      ],
+      "@ngrx-workshop-app/state/shipping/actions": [
+        "libs/state/shipping/actions/src/index.ts"
+      ],
+      "@ngrx-workshop-app/state/products/state": [
+        "libs/state/products/state/src/index.ts"
+      ],
+      "@ngrx-workshop-app/products/ui": ["libs/products/ui/src/index.ts"],
+      "@ngrx-workshop-app/state/shipping/state": [
+        "libs/state/shipping/state/src/index.ts"
+      ],
+      "@ngrx-workshop-app/cart/ui": ["libs/cart/ui/src/index.ts"],
+      "@ngrx-workshop-app/top-bar/ui": ["libs/top-bar/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -28,6 +28,36 @@
     },
     "shipping-data-access": {
       "tags": []
+    },
+    "cart-actions": {
+      "tags": []
+    },
+    "cart-state": {
+      "tags": []
+    },
+    "products-actions": {
+      "tags": []
+    },
+    "app-actions": {
+      "tags": []
+    },
+    "shipping-actions": {
+      "tags": []
+    },
+    "products-state": {
+      "tags": []
+    },
+    "products-ui": {
+      "tags": []
+    },
+    "shipping-state": {
+      "tags": []
+    },
+    "cart-ui": {
+      "tags": []
+    },
+    "top-bar-ui": {
+      "tags": []
     }
   }
 }
