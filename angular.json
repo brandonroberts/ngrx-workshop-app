@@ -47,6 +47,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -98,7 +102,8 @@
           "options": {
             "jestConfig": "apps/ngrx-workshop-app/jest.config.js",
             "tsConfig": "apps/ngrx-workshop-app/tsconfig.spec.json",
-            "setupFile": "apps/ngrx-workshop-app/src/test-setup.ts"
+            "setupFile": "apps/ngrx-workshop-app/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       }
@@ -179,7 +184,8 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/api/jest.config.js",
-            "tsConfig": "apps/api/tsconfig.spec.json"
+            "tsConfig": "apps/api/tsconfig.spec.json",
+            "passWithNoTests": true
           }
         }
       }
@@ -204,7 +210,8 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/api-interface/jest.config.js",
-            "tsConfig": "libs/api-interface/tsconfig.spec.json"
+            "tsConfig": "libs/api-interface/tsconfig.spec.json",
+            "passWithNoTests": true
           }
         }
       }
@@ -230,7 +237,8 @@
           "options": {
             "jestConfig": "libs/cart-data-access/jest.config.js",
             "tsConfig": "libs/cart-data-access/tsconfig.spec.json",
-            "setupFile": "libs/cart-data-access/src/test-setup.ts"
+            "setupFile": "libs/cart-data-access/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -257,7 +265,8 @@
           "options": {
             "jestConfig": "libs/product-data-access/jest.config.js",
             "tsConfig": "libs/product-data-access/tsconfig.spec.json",
-            "setupFile": "libs/product-data-access/src/test-setup.ts"
+            "setupFile": "libs/product-data-access/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -284,7 +293,8 @@
           "options": {
             "jestConfig": "libs/shipping-data-access/jest.config.js",
             "tsConfig": "libs/shipping-data-access/tsconfig.spec.json",
-            "setupFile": "libs/shipping-data-access/src/test-setup.ts"
+            "setupFile": "libs/shipping-data-access/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -311,7 +321,8 @@
           "options": {
             "jestConfig": "libs/state/cart/actions/jest.config.js",
             "tsConfig": "libs/state/cart/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/cart/actions/src/test-setup.ts"
+            "setupFile": "libs/state/cart/actions/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -338,7 +349,8 @@
           "options": {
             "jestConfig": "libs/state/cart/state/jest.config.js",
             "tsConfig": "libs/state/cart/state/tsconfig.spec.json",
-            "setupFile": "libs/state/cart/state/src/test-setup.ts"
+            "setupFile": "libs/state/cart/state/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -365,7 +377,8 @@
           "options": {
             "jestConfig": "libs/state/products/actions/jest.config.js",
             "tsConfig": "libs/state/products/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/products/actions/src/test-setup.ts"
+            "setupFile": "libs/state/products/actions/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -392,7 +405,8 @@
           "options": {
             "jestConfig": "libs/state/app/actions/jest.config.js",
             "tsConfig": "libs/state/app/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/app/actions/src/test-setup.ts"
+            "setupFile": "libs/state/app/actions/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -419,7 +433,8 @@
           "options": {
             "jestConfig": "libs/state/shipping/actions/jest.config.js",
             "tsConfig": "libs/state/shipping/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/shipping/actions/src/test-setup.ts"
+            "setupFile": "libs/state/shipping/actions/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -446,7 +461,8 @@
           "options": {
             "jestConfig": "libs/state/products/state/jest.config.js",
             "tsConfig": "libs/state/products/state/tsconfig.spec.json",
-            "setupFile": "libs/state/products/state/src/test-setup.ts"
+            "setupFile": "libs/state/products/state/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -473,7 +489,8 @@
           "options": {
             "jestConfig": "libs/products/ui/jest.config.js",
             "tsConfig": "libs/products/ui/tsconfig.spec.json",
-            "setupFile": "libs/products/ui/src/test-setup.ts"
+            "setupFile": "libs/products/ui/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -500,7 +517,8 @@
           "options": {
             "jestConfig": "libs/state/shipping/state/jest.config.js",
             "tsConfig": "libs/state/shipping/state/tsconfig.spec.json",
-            "setupFile": "libs/state/shipping/state/src/test-setup.ts"
+            "setupFile": "libs/state/shipping/state/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -527,7 +545,8 @@
           "options": {
             "jestConfig": "libs/cart/ui/jest.config.js",
             "tsConfig": "libs/cart/ui/tsconfig.spec.json",
-            "setupFile": "libs/cart/ui/src/test-setup.ts"
+            "setupFile": "libs/cart/ui/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
@@ -554,7 +573,8 @@
           "options": {
             "jestConfig": "libs/top-bar/ui/jest.config.js",
             "tsConfig": "libs/top-bar/ui/tsconfig.spec.json",
-            "setupFile": "libs/top-bar/ui/src/test-setup.ts"
+            "setupFile": "libs/top-bar/ui/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
