@@ -5,7 +5,7 @@ import { Product } from '@ngrx-workshop-app/api-interface';
 import { select, Store } from '@ngrx/store';
 import { map } from 'rxjs/operators';
 import { ProductActions } from '@ngrx-workshop-app/state/products/actions';
-import { ProductsSelectors } from '@ngrx-workshop-app/state/products/state';
+import { ProductsSelectors } from '@ngrx-workshop-app/state/products';
 
 @Component({
   selector: 'app-product-details',

@@ -5,7 +5,7 @@ import { combineLatest, merge, Subject } from 'rxjs';
 import { map, publishReplay, refCount, startWith, take } from 'rxjs/operators';
 
 import { ShippingActions } from '@ngrx-workshop-app/state/shipping/actions';
-import { ShippingSelectors } from '@ngrx-workshop-app/state/shipping/state';
+import { ShippingSelectors } from '@ngrx-workshop-app/state/shipping';
 
 @Component({
   selector: 'ngrx-workshop-app-shipping-method-selection-dialog',

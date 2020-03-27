@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { MatSnackBar } from '@angular/material';
 import { ProductActions } from '@ngrx-workshop-app/state/products/actions';
-import { ProductsSelectors } from '@ngrx-workshop-app/state/products/state';
+import { ProductsSelectors } from '@ngrx-workshop-app/state/products';
 
 @Component({
   selector: 'app-product-list',

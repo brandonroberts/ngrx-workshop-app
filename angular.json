@@ -300,168 +300,84 @@
       },
       "schematics": {}
     },
-    "cart-actions": {
+    "state-app": {
       "projectType": "library",
-      "root": "libs/state/cart/actions",
-      "sourceRoot": "libs/state/cart/actions/src",
+      "root": "libs/state/app",
+      "sourceRoot": "libs/state/app/src",
       "prefix": "ngrx-workshop-app",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/state/cart/actions/tsconfig.lib.json",
-              "libs/state/cart/actions/tsconfig.spec.json"
+              "libs/state/app/tsconfig.lib.json",
+              "libs/state/app/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/state/cart/actions/**"]
+            "exclude": ["**/node_modules/**", "!libs/state/app/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/state/cart/actions/jest.config.js",
-            "tsConfig": "libs/state/cart/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/cart/actions/src/test-setup.ts",
+            "jestConfig": "libs/state/app/jest.config.js",
+            "tsConfig": "libs/state/app/tsconfig.spec.json",
+            "setupFile": "libs/state/app/src/test-setup.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },    
+    "state-cart": {
+      "projectType": "library",
+      "root": "libs/state/cart",
+      "sourceRoot": "libs/state/cart/src",
+      "prefix": "ngrx-workshop-app",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/state/cart/tsconfig.lib.json",
+              "libs/state/cart/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/state/cart/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/state/cart/jest.config.js",
+            "tsConfig": "libs/state/cart/tsconfig.spec.json",
+            "setupFile": "libs/state/cart/src/test-setup.ts",
             "passWithNoTests": true
           }
         }
       },
       "schematics": {}
     },
-    "cart-state": {
+    "state-products": {
       "projectType": "library",
-      "root": "libs/state/cart/state",
-      "sourceRoot": "libs/state/cart/state/src",
+      "root": "libs/state/products",
+      "sourceRoot": "libs/state/products/src",
       "prefix": "ngrx-workshop-app",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/state/cart/state/tsconfig.lib.json",
-              "libs/state/cart/state/tsconfig.spec.json"
+              "libs/state/products/tsconfig.lib.json",
+              "libs/state/products/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/state/cart/state/**"]
+            "exclude": ["**/node_modules/**", "!libs/state/products/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/state/cart/state/jest.config.js",
-            "tsConfig": "libs/state/cart/state/tsconfig.spec.json",
-            "setupFile": "libs/state/cart/state/src/test-setup.ts",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "schematics": {}
-    },
-    "products-actions": {
-      "projectType": "library",
-      "root": "libs/state/products/actions",
-      "sourceRoot": "libs/state/products/actions/src",
-      "prefix": "ngrx-workshop-app",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/state/products/actions/tsconfig.lib.json",
-              "libs/state/products/actions/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/state/products/actions/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/state/products/actions/jest.config.js",
-            "tsConfig": "libs/state/products/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/products/actions/src/test-setup.ts",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "schematics": {}
-    },
-    "app-actions": {
-      "projectType": "library",
-      "root": "libs/state/app/actions",
-      "sourceRoot": "libs/state/app/actions/src",
-      "prefix": "ngrx-workshop-app",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/state/app/actions/tsconfig.lib.json",
-              "libs/state/app/actions/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/state/app/actions/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/state/app/actions/jest.config.js",
-            "tsConfig": "libs/state/app/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/app/actions/src/test-setup.ts",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "schematics": {}
-    },
-    "shipping-actions": {
-      "projectType": "library",
-      "root": "libs/state/shipping/actions",
-      "sourceRoot": "libs/state/shipping/actions/src",
-      "prefix": "ngrx-workshop-app",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/state/shipping/actions/tsconfig.lib.json",
-              "libs/state/shipping/actions/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/state/shipping/actions/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/state/shipping/actions/jest.config.js",
-            "tsConfig": "libs/state/shipping/actions/tsconfig.spec.json",
-            "setupFile": "libs/state/shipping/actions/src/test-setup.ts",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "schematics": {}
-    },
-    "products-state": {
-      "projectType": "library",
-      "root": "libs/state/products/state",
-      "sourceRoot": "libs/state/products/state/src",
-      "prefix": "ngrx-workshop-app",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/state/products/state/tsconfig.lib.json",
-              "libs/state/products/state/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/state/products/state/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/state/products/state/jest.config.js",
-            "tsConfig": "libs/state/products/state/tsconfig.spec.json",
-            "setupFile": "libs/state/products/state/src/test-setup.ts",
+            "jestConfig": "libs/state/products/jest.config.js",
+            "tsConfig": "libs/state/products/tsconfig.spec.json",
+            "setupFile": "libs/state/products/src/test-setup.ts",
             "passWithNoTests": true
           }
         }
@@ -496,28 +412,28 @@
       },
       "schematics": {}
     },
-    "shipping-state": {
+    "state-shipping": {
       "projectType": "library",
-      "root": "libs/state/shipping/state",
-      "sourceRoot": "libs/state/shipping/state/src",
+      "root": "libs/state/shipping",
+      "sourceRoot": "libs/state/shipping/src",
       "prefix": "ngrx-workshop-app",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/state/shipping/state/tsconfig.lib.json",
-              "libs/state/shipping/state/tsconfig.spec.json"
+              "libs/state/shipping/tsconfig.lib.json",
+              "libs/state/shipping/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/state/shipping/state/**"]
+            "exclude": ["**/node_modules/**", "!libs/state/shipping/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/state/shipping/state/jest.config.js",
-            "tsConfig": "libs/state/shipping/state/tsconfig.spec.json",
-            "setupFile": "libs/state/shipping/state/src/test-setup.ts",
+            "jestConfig": "libs/state/shipping/jest.config.js",
+            "tsConfig": "libs/state/shipping/tsconfig.spec.json",
+            "setupFile": "libs/state/shipping/src/test-setup.ts",
             "passWithNoTests": true
           }
         }

@@ -4,9 +4,11 @@ import { select, Store } from '@ngrx/store';
 import { combineLatest, Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
-import { CartSelectors } from '@ngrx-workshop-app/state/cart/state';
-import { ShippingSelectors } from '@ngrx-workshop-app/state/shipping/state';
+import { CartSelectors } from '@ngrx-workshop-app/state/cart';
+import { ShippingSelectors } from '@ngrx-workshop-app/state/shipping';
 import { CartActions } from '@ngrx-workshop-app/state/cart/actions';
+
+import { CartPageSelectors } from '../state';
 
 @Component({
   selector: 'app-cart',
@@ -28,7 +30,7 @@ export class CartComponent implements OnInit {
   );
   cartSubtotal$ = this.store.pipe(select(CartSelectors.getCartTotal));
   shippingSubtotal$ = this.store.pipe(select(ShippingSelectors.selectShippingCost));
-  grandTotal$ = this.store.pipe(select(CartSelectors.getTotal));
+  grandTotal$ = this.store.pipe(select(CartPageSelectors.getTotal));
   shippingInvalid$ = this.store.pipe(select(ShippingSelectors.getShippingInvalid));
   cartInvalid$ = this.store.pipe(select(CartSelectors.getCartInvalid));
 

@@ -30,28 +30,19 @@
     "shipping-data-access": {
       "tags": []
     },
-    "cart-actions": {
+    "state-app": {
       "tags": []
     },
-    "cart-state": {
+    "state-cart": {
       "tags": []
     },
-    "products-actions": {
-      "tags": []
-    },
-    "app-actions": {
-      "tags": []
-    },
-    "shipping-actions": {
-      "tags": []
-    },
-    "products-state": {
+    "state-products": {
       "tags": []
     },
     "products-ui": {
       "tags": []
     },
-    "shipping-state": {
+    "state-shipping": {
       "tags": []
     },
     "cart-ui": {

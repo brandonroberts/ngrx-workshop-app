@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 
-import { ShippingFeature, ShippingEffects } from '@ngrx-workshop-app/state/shipping/state';
+import { ShippingFeature, ShippingEffects } from '@ngrx-workshop-app/state/shipping';
 
 @NgModule({
   imports: [CommonModule, RouterModule,

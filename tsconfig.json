@@ -28,26 +28,26 @@
       ],
       "@ngrx-workshop-app/*": ["apps/ngrx-workshop-app/src/app/*"],
       "@ngrx-workshop-app/state/cart/actions": [
-        "libs/state/cart/actions/src/index.ts"
+        "libs/state/cart/src/actions.ts"
       ],
-      "@ngrx-workshop-app/state/cart/state": [
-        "libs/state/cart/state/src/index.ts"
+      "@ngrx-workshop-app/state/cart": [
+        "libs/state/cart/src/index.ts"
       ],
       "@ngrx-workshop-app/state/products/actions": [
-        "libs/state/products/actions/src/index.ts"
+        "libs/state/products/src/actions.ts"
       ],
       "@ngrx-workshop-app/state/app/actions": [
-        "libs/state/app/actions/src/index.ts"
+        "libs/state/app/src/actions.ts"
       ],
       "@ngrx-workshop-app/state/shipping/actions": [
-        "libs/state/shipping/actions/src/index.ts"
+        "libs/state/shipping/src/actions.ts"
       ],
-      "@ngrx-workshop-app/state/products/state": [
-        "libs/state/products/state/src/index.ts"
+      "@ngrx-workshop-app/state/products": [
+        "libs/state/products/src/index.ts"
       ],
       "@ngrx-workshop-app/products/ui": ["libs/products/ui/src/index.ts"],
-      "@ngrx-workshop-app/state/shipping/state": [
-        "libs/state/shipping/state/src/index.ts"
+      "@ngrx-workshop-app/state/shipping": [
+        "libs/state/shipping/src/index.ts"
       ],
       "@ngrx-workshop-app/cart/ui": ["libs/cart/ui/src/index.ts"],
       "@ngrx-workshop-app/top-bar/ui": ["libs/top-bar/ui/src/index.ts"]

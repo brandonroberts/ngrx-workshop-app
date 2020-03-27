@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 
-import { CartFeature, CartEffects } from '@ngrx-workshop-app/state/cart/state';
+import { CartFeature, CartEffects } from '@ngrx-workshop-app/state/cart';
 
 import { CartComponent } from './cart/cart.component';
 import { CartRoutingModule } from './cart-routing.module';
